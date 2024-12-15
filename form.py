@@ -1,5 +1,3 @@
-# This program creates a form where the entered data is stored in a csv file.
-
 from tkinter import*
 import csv
 from tkinter import messagebox
