@@ -75,6 +75,11 @@ Radiobutton(root, text="Arts", variable=core, value=3, command=course).grid(row=
 
 # Data is stored in a csv file
 def reg():
+    email_address = email.get()
+    if "@" not in email_address:
+        messagebox.showerror("Error", "Invalid email! Please include '@' symbol in your email address.")
+        return
+        
     messagebox.showinfo("Status","Registration Complete!")
     
     data= [name.get(),lang.get(),gvalue.get(),address.get(),email.get(),contact.get(),country.get(),state.get(),cvalue.get()]
